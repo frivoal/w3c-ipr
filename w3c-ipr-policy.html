@@ -200,7 +200,7 @@ DRAFT W3C Patent Policy, based on WHATWG IPR Policy</h1>
 
 	<p>
 	"Patent Exclusion Period"
-	means the @@ 45 or 60 @@-<a href="#day">Day</a> period
+	means the period
 	during which an <a href="#wgparticipant">Working Group Participants</a>
 	may exclude patents from the royalty-free <a href="#patent-licensing-obligation">Patent-Licensing Obligations</a>,
 	as more fully set forth in <a href="#patent-exclusions">Section 5.5. Patent Exclusions</a>.
@@ -328,11 +328,16 @@ DRAFT W3C Patent Policy, based on WHATWG IPR Policy</h1>
 
 	<p>
 	An <a href="#wgparticipant">Working Group Participant</a>
-	may terminate particpation by resigning from the Working Group.
+	may terminate participation by resigning from the Working Group.
 	Copyright licenses and patent commitments for which exclusion periods have closed remain binding.
 	The departing participant has @@60 days
 	after their actual resignation to exclude Essential Patent Claims
 	included in an W3C Specification but not yet published in a Patent Review Draft.
+	Additionally,
+	if a participant resigns from the Working Group
+	within 90 days after the publication of a <a href="#fprd">First Patent Review Draft</a>
+	it is excluded from all <a href="#dfn-review-draft-licensing-obligations">Review Draft Licensing Obligations</a>
+	relating to that W3C Specification.
 
 <h3 id="review-draft">
 2.11. Patent Review Drafts<a class="self-link" href="review-draft"></a></h3>
@@ -499,23 +504,32 @@ DRAFT W3C Patent Policy, based on WHATWG IPR Policy</h1>
 
 	<p>
 	Each Working Group periodically publishes a <a href="#review-draft">Patent Review Draft</a>
-	of the Specification for the purpose of soliciting patent licensing commitments as follows:
+	of the Specification for the purpose of soliciting patent licensing commitments.
+	The first such <a href="#review-draft">Patent Review Draft</a> of a particular Specification
+	is known as the <dfn id="fprd">First Patent Review Draft</a>.
 
 <h4 id="lrd-exclusion-pediods">
 5.4.1 Legal Review Draft Patent Exclusion Periods</h4>
 
+	<p>
 	A <a href="#patent-exclusion-period">Patent Exclusion Period</a>
 	commences automatically
-	upon posted notice that the <a href="#review-draft">Patent Review Draft</a> has been published
-	and continues for @@ 45 or 60 @@ <a href="#day">Days</a>.
+	upon posted notice that the <a href="#review-draft">Patent Review Draft</a> has been published.
+	In the case of the <a href="#fprd">First Patent Review Draft</a>,
+	the <a href="#patent-exclusion-period">Patent Exclusion Period</a> continues
+	for 150 <a href="#day">Days</a>;
+	for all other <a href="#review-draft">Patent Review Drafts</a>,
+	it continues for @@ 45 or 60 @@ <a href="#day">Days</a>.
 	Upon conclusion of the <a href="#patent-exclusion-period">Patent Exclusion Period</a>,
 	<a href="#wgparticipant">Working Group Participants</a> incur the <a href="#dfn-review-draft-licensing-obligations">Review Draft Licensing Obligations</a>
 	unless the <a href="#wgparticipant">Working Group Participant</a> has delivered a timely <a href="#patent-exclusion-notice">Patent Exclusion Notice</a>.
+
+	<p>
 	When an <a href="#wgparticipant">Working Group Participant</a> joins an Working Group,
-	the most-recent <a href="#review-draft">Patent Review Draft</a> is deemed to have been "published"
-	and a <a href="#patent-exclusion-period">Patent Exclusion Period</a> commences,
-	with respect to that <a href="#wgparticipant">Working Group Participant</a>,
-	when it joins.
+	an exceptional 150-day <a href="#patent-exclusion-period">Patent Exclusion Period</a>
+	commences solely for that <a href="#wgparticipant">Working Group Participant</a>
+	with respect to the most recently published <a href="#review-draft">Patent Review Draft</a>
+	of each W3C Specification within the scope of that Working Group’s charter.
 
 <h4 id="cadence">
 5.4.2. Patent Review Draft Cadence<a class="self-link" href="cadence"></a></h4>
