@@ -11,7 +11,7 @@
 
 <p>On 7 July 2019, Florian sent comments on the proposed Evergreen Patent Policy in <a href="https://lists.w3.org/Archives/Public/www-archive/2019Jul/0001.html">Feedback on the proposed Evergreen Patent Policy</a> and <a href="https://lists.w3.org/Archives/Public/www-archive/2019Jul/0002.html">Approach to an Everblue Patent / IPR policy</a>. The goal of these messages was to a) fix some problems inherent to the current drafting of the Evergreen Patent Policy and b) make some largely cosmetic changes (renaming terms to be more generic), and import a few missing sections from the currently-active <a href="https://www.w3.org/Consortium/Patent-Policy-20170801/">W3C Patent Policy</a>, to make the proposed Evergreen Patent Policy something that could be used for the W3C Process as a whole, as per the recommendation of the AB taskforce working on Evergreen and related topics.
 
-<p>To better characterize the suggested changes and to provide concrete proposals for incorporation into the proposal, we imported PSIG’s <a href="https://www.w3.org/2004/pp/psig/pp-evergreen.html">DRAFT Evergreen Patent Policy</a> (<a href="Original20190724-DRAFT Evergreen Patent Policy.html">as it was on July 24th</a>) into a <a href="https://github.com/frivoal/w3c-ipr">GitHub repository</a>, so as to rigorously track proposed changes. We first, however, did some cleanup of the source code and markup to bring it in line with the latest W3C document-editing best practices.
+<p>To better characterize the suggested changes and to provide concrete proposals for incorporation into the proposal, we imported PSIG’s <a href="https://www.w3.org/2004/pp/psig/pp-evergreen.html">DRAFT Evergreen Patent Policy</a> (<a href="original-evergreen-pp.html">as it was on July 24th</a>) into a <a href="https://github.com/frivoal/w3c-ipr">GitHub repository</a>, so as to rigorously track proposed changes. We first, however, did some cleanup of the source code and markup to bring it in line with the latest W3C document-editing best practices.
 
 <p>The rest of this document explains the problems outlined in the two emails (along with a few new ones discovered along the way), and their proposed solutions. We hope that PSIG reviews these changes and updates their draft to reflect them in spirit, if not in letter. We also hope that it finds its way into a git repository so that the Advisory Board, PSIG, and the W3C Process CG can better coordinate as the draft evolves (and we are happy to hand over our git repository as a starting point for such an effort).
 
@@ -20,7 +20,7 @@
 	<dd><a href="https://frivoal.github.io/w3c-ipr/w3c-ipr-policy.html">https://frivoal.github.io/w3c-ipr/w3c-ipr-policy.html</a>
 
 	<dt>HTML Diff against the July 24th Evergreen Patent Policy:
-	<dd style="white-space:nowrap;overflow:hidden;text-overflow:ellipsis"><a href="https://services.w3.org/htmldiff?doc1=https%3A%2F%2Ffrivoal.github.io%2Fw3c-ipr%2FOriginal20190724-DRAFT+Evergreen+Patent+Policy.html&doc2=https%3A%2F%2Ffrivoal.github.io%2Fw3c-ipr%2Fw3c-ipr-policy.html">https://services.w3.org/htmldiff?doc1=https%3A%2F%2Ffrivoal.github.io%2Fw3c-ipr%2FOriginal20190724-DRAFT+Evergreen+Patent+Policy.html&doc2=https%3A%2F%2Ffrivoal.github.io%2Fw3c-ipr%2Fw3c-ipr-policy.html</a>
+	<dd style="white-space:nowrap;overflow:hidden;text-overflow:ellipsis"><a href="https://services.w3.org/htmldiff?doc1=https%3A%2F%2Ffrivoal.github.io%2Fw3c-ipr%2Foriginal-evergreen-pp.html&doc2=https%3A%2F%2Ffrivoal.github.io%2Fw3c-ipr%2Fw3c-ipr-policy.html">https://services.w3.org/htmldiff?doc1=https%3A%2F%2Ffrivoal.github.io%2Fw3c-ipr%2Foriginal-evergreen-pp.html&doc2=https%3A%2F%2Ffrivoal.github.io%2Fw3c-ipr%2Fw3c-ipr-policy.html</a>
 
 	<dt>Commit log:
 	<dd><a href="https://github.com/frivoal/w3c-ipr/commits/master">https://github.com/frivoal/w3c-ipr/commits/master</a>
@@ -52,7 +52,7 @@ but make it easier to maintain:
 the later is used. I suggest merging. Also, suggested name: Working
 Group Participant.</pre></blockquote>
 
-Merged text in 2.10.1 and 2.10 to produce a combined definition for “Working Group Participant”. (<a href="https://github.com/frivoal/w3c-ipr/commit/e44939678eea784f89444e6dcf3f6521460d738c">Changeset</a>, <a href="https://frivoal.github.io/w3c-ipr/w3c-ipr-policy.html#participant">Result</a>, <a href="https://services.w3.org/htmldiff?doc1=https%3A%2F%2Ffrivoal.github.io%2Fw3c-ipr%2FOriginal20190724-DRAFT+Evergreen+Patent+Policy.html&doc2=https%3A%2F%2Ffrivoal.github.io%2Fw3c-ipr%2Fw3c-ipr-policy.html#participant">Diff</a>)
+Merged text in 2.10.1 and 2.10 to produce a combined definition for “Working Group Participant”. (<a href="https://github.com/frivoal/w3c-ipr/commit/e44939678eea784f89444e6dcf3f6521460d738c">Changeset</a>, <a href="https://frivoal.github.io/w3c-ipr/w3c-ipr-policy.html#participant">Result</a>, <a href="https://services.w3.org/htmldiff?doc1=https%3A%2F%2Ffrivoal.github.io%2Fw3c-ipr%2Foriginal-evergreen-pp.html&doc2=https%3A%2F%2Ffrivoal.github.io%2Fw3c-ipr%2Fw3c-ipr-policy.html#participant">Diff</a>)
 
 <h3 id=circular-refs>1.2 Circular Definitions</h3>
 
@@ -77,7 +77,7 @@ unconditionally. No strong opinion if that single place should be the
 Process of the Patent Policy.</pre>
 </blockquote>
 
-<p>Split 5.4 to have several subsections: one to generically define what a Patent Review draft is, one to define its exclusion period, one to define its publication cadence, and one to define its notification requirements. Folded in annotated thoughts from the PSIG draft into potential normative text. Improved practicality of the cadence requirements, added an issue that maybe this should be moved to the Process document which is easier to update. (<a href="https://github.com/frivoal/w3c-ipr/commit/c21b49be73f925517421b6152f4b53ee898979e4">Changeset</a>, <a href="https://frivoal.github.io/w3c-ipr/w3c-ipr-policy.html#review-draft-publication">Result</a>, <a href="https://services.w3.org/htmldiff?doc1=https%3A%2F%2Ffrivoal.github.io%2Fw3c-ipr%2FOriginal20190724-DRAFT+Evergreen+Patent+Policy.html&doc2=https%3A%2F%2Ffrivoal.github.io%2Fw3c-ipr%2Fw3c-ipr-policy.html#review-draft-publication">Diff</a>)
+<p>Split 5.4 to have several subsections: one to generically define what a Patent Review draft is, one to define its exclusion period, one to define its publication cadence, and one to define its notification requirements. Folded in annotated thoughts from the PSIG draft into potential normative text. Improved practicality of the cadence requirements, added an issue that maybe this should be moved to the Process document which is easier to update. (<a href="https://github.com/frivoal/w3c-ipr/commit/c21b49be73f925517421b6152f4b53ee898979e4">Changeset</a>, <a href="https://frivoal.github.io/w3c-ipr/w3c-ipr-policy.html#review-draft-publication">Result</a>, <a href="https://services.w3.org/htmldiff?doc1=https%3A%2F%2Ffrivoal.github.io%2Fw3c-ipr%2Foriginal-evergreen-pp.html&doc2=https%3A%2F%2Ffrivoal.github.io%2Fw3c-ipr%2Fw3c-ipr-policy.html#review-draft-publication">Diff</a>)
 
 <h3 id="claims-implementation">1.4 Infringement by Contribution vs. by Implementation of Contribution</h3>
 
@@ -103,7 +103,7 @@ It should instead say:
 
 (this "bug" is shared with the WHATWG IPR Policy)</pre></blockquote>
 
-<p>Fixed as described. (<a href="https://github.com/frivoal/w3c-ipr/commit/d57ca96a4eefc8b679b03382b89e4f87d4429167">Changeset</a>, <a href="https://frivoal.github.io/w3c-ipr/w3c-ipr-policy.html#essential-patent-claims">Result</a>, <a href="https://services.w3.org/htmldiff?doc1=https%3A%2F%2Ffrivoal.github.io%2Fw3c-ipr%2FOriginal20190724-DRAFT+Evergreen+Patent+Policy.html&doc2=https%3A%2F%2Ffrivoal.github.io%2Fw3c-ipr%2Fw3c-ipr-policy.html#essential-patent-claims">Diff</a>)
+<p>Fixed as described. (<a href="https://github.com/frivoal/w3c-ipr/commit/d57ca96a4eefc8b679b03382b89e4f87d4429167">Changeset</a>, <a href="https://frivoal.github.io/w3c-ipr/w3c-ipr-policy.html#essential-patent-claims">Result</a>, <a href="https://services.w3.org/htmldiff?doc1=https%3A%2F%2Ffrivoal.github.io%2Fw3c-ipr%2Foriginal-evergreen-pp.html&doc2=https%3A%2F%2Ffrivoal.github.io%2Fw3c-ipr%2Fw3c-ipr-policy.html#essential-patent-claims">Diff</a>)
 
 <h3 id="contribution-gap">1.5 Contribution Licensing Gap</h3>
 
@@ -148,9 +148,9 @@ We feel this is an improvement because:
   <li>It clarifies that if the WG has consensus to work on a document, even if it does not have yet consensus on the content of the document, then it is counted as a W3C Specification for the purposes of the patent policy, and contributions to it are covered.
 </ul>
 
-<p>(<a href="https://github.com/frivoal/w3c-ipr/commit/97e4314473c42afb191418df71b343a25822bd7a#diff-4c7316c42dbe1183820c0798e334147fL355">Changeset</a>, <a href="https://frivoal.github.io/w3c-ipr/w3c-ipr-policy.html#w3c-specification">Result</a>, <a href="https://services.w3.org/htmldiff?doc1=https%3A%2F%2Ffrivoal.github.io%2Fw3c-ipr%2FOriginal20190724-DRAFT+Evergreen+Patent+Policy.html&doc2=https%3A%2F%2Ffrivoal.github.io%2Fw3c-ipr%2Fw3c-ipr-policy.html#w3c-specification">Diff</a>)
+<p>(<a href="https://github.com/frivoal/w3c-ipr/commit/97e4314473c42afb191418df71b343a25822bd7a#diff-4c7316c42dbe1183820c0798e334147fL355">Changeset</a>, <a href="https://frivoal.github.io/w3c-ipr/w3c-ipr-policy.html#w3c-specification">Result</a>, <a href="https://services.w3.org/htmldiff?doc1=https%3A%2F%2Ffrivoal.github.io%2Fw3c-ipr%2Foriginal-evergreen-pp.html&doc2=https%3A%2F%2Ffrivoal.github.io%2Fw3c-ipr%2Fw3c-ipr-policy.html#w3c-specification">Diff</a>)
 
-<h2>2. Generalization</h2>
+<h2 id=generalization>2. Generalization</h2>
 
 <p>(<a href="https://github.com/frivoal/w3c-ipr/commit/97e4314473c42afb191418df71b343a25822bd7a">Changeset</a>, Result: terminology updated throughout the document)
 
@@ -184,7 +184,7 @@ We feel this is an improvement because:
 
 <p>These changes fill in gaps in the proposal with respect to the current W3C Patent Policy.
 
-<h3 id="invited-expert-note">3.1 Restore Note on Licensing Commitemtns for Invited Experts</h3>
+<h3 id="invited-expert-note">3.1 Restore Note on Licensing Commitments for Invited Experts</h3>
 
 <p>Copied over <a href="https://www.w3.org/Consortium/Patent-Policy-20170801/#sec-invited">Note on Licensing Commitments for Invited Experts</a>, which is referenced by the Process and seems like a useful clarification.
 
@@ -207,7 +207,7 @@ We feel this is an improvement because:
 <p>We evaluated the handling of First Public Working Drafts, as well as joining and leaving a Working Group, in the current W3C Patent Policy and came up with the following changes as a reasonable incorporation of their intent:
 
 <ul>
-	<li>Defined a “First Patent Review Draft”, which has a 150-day exclusion period, with the intent that the Process defines First Public Working Draft as a “First Patent Review Draft”. (The Evergreen Process will need to decide if the first Evergreen REC—or maybe the first Preliminary Draft—should be a First Patent Review Draft, or if there should be an obligation to publish a First Patent Review Draft within <var>x</var> months of starting.) (<a href="https://frivoal.github.io/w3c-ipr/w3c-ipr-policy.html#review-draft-publication">Result</a>, <a href="https://services.w3.org/htmldiff?doc1=https%3A%2F%2Ffrivoal.github.io%2Fw3c-ipr%2FOriginal20190724-DRAFT+Evergreen+Patent+Policy.html&doc2=https%3A%2F%2Ffrivoal.github.io%2Fw3c-ipr%2Fw3c-ipr-policy.html#review-draft-publication">Diff</a>)
+	<li>Defined a “First Patent Review Draft”, which has a 150-day exclusion period, with the intent that the Process defines First Public Working Draft as a “First Patent Review Draft”. (The Evergreen Process will need to decide if the first Evergreen REC—or maybe the first Preliminary Draft—should be a First Patent Review Draft, or if there should be an obligation to publish a First Patent Review Draft within <var>x</var> months of starting.) (<a href="https://frivoal.github.io/w3c-ipr/w3c-ipr-policy.html#review-draft-publication">Result</a>, <a href="https://services.w3.org/htmldiff?doc1=https%3A%2F%2Ffrivoal.github.io%2Fw3c-ipr%2Foriginal-evergreen-pp.html&doc2=https%3A%2F%2Ffrivoal.github.io%2Fw3c-ipr%2Fw3c-ipr-policy.html#review-draft-publication">Diff</a>)
   <li>Adjusted wording around exclusion opportunities upon joining a Working Group to accommodate Working Groups that publish multiple W3C Specifications.
   <li>Added back the clause that allows a Member to resign from a Working Group within 90 days of a First Public Working Draft (now First Patent Review Draft) to excuse themselves any Reivew Draft Licensing Obligations. (<a href="https://frivoal.github.io/w3c-ipr/w3c-ipr-policy.html#leaving">Result</a>)
 </ul>
@@ -217,7 +217,7 @@ We feel this is an improvement because:
 
 <blockquote cite="https://lists.w3.org/Archives/Public/www-archive/2019Jul/0001.html"><pre>8. The classic W3C Patent Policy has a 60 day exclusion period (most of the time, there are also 150 and 90 periods associated with FPWD). The proposed evergreen one changes that to 45 days (except when leaving a group, where it is 60). Is this difference intentional / necessary? I worry it will generate needless controversy.</pre></blockquote>
 
-<p>We noticed that the PSIG draft added this as an open issue in their draft; we left it as an open issue.
+<p>We noticed that the PSIG draft added this as an open issue in their draft; we left it as an open issue. We recommend aligning with the classic W3C Patent Policy to avoid getting push back on the whole document merely due to a difference of duration.
 
 <h2 id=questions>4. Questions to PSIG</h2>
 
@@ -225,4 +225,4 @@ We feel this is an improvement because:
   <li>Both the classic W3C Patent Policy and the Evergreen Patent Policy (and ipso facto, our proposed updated Patent Policy) have sections dealing with Disclosures (respectively <a href="https://www.w3.org/Consortium/Patent-Policy-20040205/#sec-Disclosure">section 6</a> and <a href="https://www.w3.org/2004/pp/psig/pp-evergreen.html#56-patent-disclosures">section 5.6</a>). However, their terms are very different. Is this difference intentional? We have at this point no strong favoring either the classic W3C Approach or the WHATWG Approach, but we note that they are substantially different, in ways that are not obviously tied to the difference between the classical REC track and the Evergreen / Living Standards approach.
   <li>The normative content of an evergreen recommendation can change over time, not only adding new things, but also possibly changing or removing some. Is it correct that new licenses continue to be granted for anything that was once in a Review Draft and that was not excluded, even if it has since been removed (or changed), as long as the spec is not rescinded? This is not necessarily blocking, but I find it a little surprising.
     <p><small>Note: We did not address issue 6 of the <a href="https://lists.w3.org/Archives/Public/www-archive/2019Jul/0001.html">Feedback on the proposed Evergreen Patent Policy</a> mail here, but instead <a href="https://github.com/w3c/w3process/issues/303">filed it against the process</a>, as it felt orthogonal to this discussion.</small>
-<ul>
+</ul>
